@@ -14,7 +14,7 @@ Cmake and NetCDF should be prepared, "fabm_gotm_install_1.sh" would help you.
 
 ## Building
 
-"fabm_gotm_install_2.sh" includes clone and setup configurations for gotm fabm and cases of gotm.
+"fabm_gotm_install_2.sh" includes clone and setup configurations for gotm, fabm and cases of gotm.
 
 ## At last
 
