@@ -1,4 +1,4 @@
-# To research student in Sasaki Lab
+# To research students in Sasaki Lab
 
 Please read this document before you clone the git.
 
