@@ -27,7 +27,7 @@ else
 	git clone git://github.com/gotm-model/code.git $GOTMDIR
 	# setup and install for fabm-gotm-ersem environment
 	mkdir -p $GOTM_PREFIX && cd $GOTM_PREFIX
-	cmake $GOTMDIR/src -DCMAKE_INSTALL_PREFIX=`pwd` -DFABM_BASE=$FABMDIR -DFABM_ERSEM_BASE=$ERSEMDIR -DCMAKE_Fortran_COMPILER=$COMPILER
+	cmake $GOTMDIR/src -DCMAKE_INSTALL_PREFIX=`pwd` -DFABM_BASE=$FABMDIR -DCMAKE_Fortran_COMPILER=$COMPILER
 	make install
 	# echo ' '>> ~/.bashrc
 	# echo '# '$DATETIME': add gotm in fabm-gotm environment to the path'>> ~/.bashrc
