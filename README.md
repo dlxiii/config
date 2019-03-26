@@ -1,4 +1,4 @@
-# To research students in Sasaki Lab
+# To readers
 
 Please read this document before you clone the git.
 
