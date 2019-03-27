@@ -75,6 +75,7 @@ rm netcdf-4.6.1.tar.gz
 echo ' '>> ~/.bashrc
 echo '# '$DATETIME': install netcdf-c'>> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=/opt/netcdf-c/lib:${LD_LIBRARY_PATH}'>> ~/.bashrc
+echo 'export INCLUDE_PATH=/opt/netcdf-c/include:${INCLUDE_PATH}'>> ~/.bashrc
 echo 'export PATH=/opt/netcdf-c/bin:${PATH}'>> ~/.bashrc
 echo '###################################################'>> ~/.bashrc
 source ~/.bashrc
@@ -95,6 +96,7 @@ rm netcdf-fortran-4.4.4.tar.gz
 echo ' '>> ~/.bashrc
 echo '# '$DATETIME': install netcdf-fortran'>> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=/opt/netcdf-fortran/lib:${LD_LIBRARY_PATH}'>> ~/.bashrc
+echo 'export LINCLUDE_PATH=/opt/netcdf-fortran/lib:${INCLUDE_PATH}'>> ~/.bashrc
 echo 'export PATH=/opt/netcdf-fortran/bin:${PATH}'>> ~/.bashrc
 echo '###################################################'>> ~/.bashrc
 source ~/.bashrc
