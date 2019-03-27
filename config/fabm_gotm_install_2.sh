@@ -7,7 +7,7 @@ export GOTMDIR=$HOME/Documents/gotm/code
 export GOTMEXP=$HOME/Documents/gotm/cases
 export FABM_PREFIX=$HOME/Documents/fabm/build/gotm
 export GOTM_PREFIX=$HOME/Documents/gotm/build
-export COMPILER=gfortran
+export COMPILER=ifortran
 
 # download fabm code
 if [ -d $FABM_PREFIX/models/gotm ];then
