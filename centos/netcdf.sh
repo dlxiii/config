@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export COMPILER=gfortran
-export APPDIR=/opt/netcdf
+export APPDIR=/opt
 export FILEDIR=$HOME/Downloads
 
 export CC=gcc
@@ -13,7 +13,7 @@ export CXX=c++
 #wget https://zlib.net/zlib-1.2.11.tar.gz
 #tar -xzvf zlib-1.2.11.tar.gz
 #cd zlib-1.2.11
-#./configure --prefix=$APPDIR
+#./configure --prefix=$APPDIR/zlib-1.2.11
 #make
 #make check
 #sudo make install
@@ -26,7 +26,7 @@ export CXX=c++
 #wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.5/src/hdf5-1.10.5.tar.gz
 #tar -xzvf hdf5-1.10.5.tar.gz
 #cd hdf5-1.10.5
-#./configure --prefix=$APPDIR --with-zlib=$APPDIR CC=$CC CXX=$CXX --enable-cxx CFLAGS=-O3 CXXFLAGS=-O3 FC=$COMPILER F77=$COMPILER F90=$COMPILER --enable-fortran --enable-fortran2003
+#./configure --prefix=$APPDIR/hdf5-1.10.5 --with-zlib=$APPDIR/zlib-1.2.11 CC=$CC CXX=$CXX --enable-cxx CFLAGS=-O3 CXXFLAGS=-O3 FC=$COMPILER F77=$COMPILER F90=$COMPILER --enable-fortran --enable-fortran2003
 #make
 #make check
 #sudo make install
@@ -40,7 +40,7 @@ export CXX=c++
 #wget https://curl.haxx.se/download/curl-7.60.0.tar.gz
 #tar -xzvf curl-7.60.0.tar.gz
 #cd curl-7.60.0
-#./configure --prefix=$APPDIR --with-zlib=$APPDIR
+#./configure --prefix=$APPDIR/curl-7.60.0 --with-zlib=$APPDIR/zlib-1.2.11
 #make
 #make install
 #cd ..
@@ -52,7 +52,7 @@ export CXX=c++
 #wget http://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.gz
 #tar -xzvf m4-1.4.18.tar.gz
 #cd m4-1.4.18
-#./configure --prefix=$APPDIR
+#./configure --prefix=$APPDIR/m4-1.4.18
 #make
 #sudo make install
 #cd ..
