@@ -6,7 +6,7 @@ export DIRBASE=$HOME/tools
 export FABMDIR=$DIRBASE/fabm/code
 export GOTMDIR=$DIRBASE/gotm/code
 export GOTMEXP=$DIRBASE/gotm/cases
-export FABM_PREFIX=$DIRBASE/fabm/build/fabm-gotm
+export FABM_PREFIX=$DIRBASE/fabm/build/gotm
 export GOTM_PREFIX=$DIRBASE/gotm/build
 export COMPILER=gfortran
 
