@@ -16,7 +16,7 @@ export CXX=c++
 #./configure --prefix=$APPDIR
 #make
 #make check
-#make install
+#sudo make install
 #cd ..
 #rm -rf zlib-1.2.11
 #rm zlib-1.2.11.tar.gz
@@ -29,7 +29,7 @@ export CXX=c++
 #./configure --prefix=$APPDIR --with-zlib=$APPDIR CC=$CC CXX=$CXX --enable-cxx CFLAGS=-O3 CXXFLAGS=-O3 FC=$COMPILER F77=$COMPILER F90=$COMPILER --enable-fortran --enable-fortran2003
 #make
 #make check
-#make install
+#sudo make install
 #cd ..
 #rm -rf hdf5-1.10.5
 #rm hdf5-1.10.5.tar.gz
@@ -54,7 +54,7 @@ export CXX=c++
 #cd m4-1.4.18
 #./configure --prefix=$APPDIR
 #make
-#make install
+#sudo make install
 #cd ..
 #rm -rf m4-1.4.18
 #m4-1.4.18.tar.gz
@@ -63,11 +63,11 @@ export CXX=c++
 cd $FILEDIR
 wget https://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-4.6.1.tar.gz
 tar -xzvf netcdf-4.6.1.tar.gz
-cd netcdf-c-4.6.1
+cd netcdf-4.6.1
 ./configure --prefix=$APPDIR CC=$CC CXX=$CXX CFLAGS=-O3 CXXFLAGS=-O3 FC=$COMPILER F77=$COMPILER F90=$COMPILER --enable-fortran --disable-netcdf-4 --disable-dap
 make
 make check
-make install
+sudo make install
 cd ..
 rm -rf netcdf-4.6.1
 rm netcdf-4.6.1.tar.gz
@@ -80,7 +80,7 @@ cd netcdf-fortran-4.4.4
 LDFLAGS=-L$APPDIR/lib CPPFLAGS=-I$APPDIR/include ./configure --prefix=$APPDIR CC=$CC CXX=$CXX CFLAGS=-O3 CXXFLAGS=-O3 FC=$COMPILER F77=$COMPILER F90=$COMPILER
 make
 make check
-make install
+sudo make install
 cd ..
 rm -rf netcdf-fortran-4.4.4
 rm netcdf-fortran-4.4.4.tar.gz
