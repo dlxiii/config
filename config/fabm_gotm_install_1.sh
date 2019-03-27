@@ -1,6 +1,5 @@
 #!/bin/bash
 
-export DATETIME=$(date "+%Y-%m-%d %H:%M:%S")
 export COMPILER=gfortran
 export APPDIR=/usr/local/netcdf
 export FILEDIR=$HOME/Downloads
