@@ -18,7 +18,7 @@ else
 	# setup and install for gotm environment
 	mkdir -p $FABM_PREFIX && cd $FABM_PREFIX
 	cmake $FABMDIR/src -DCMAKE_INSTALL_PREFIX=`pwd` -DFABM_EMBED_VERSION=ON -DCMAKE_Fortran_COMPILER=$COMPILER
-	sudo make install
+	make install
 fi
 
 # download gotm code
@@ -29,7 +29,7 @@ else
 	# setup and install for fabm-gotm-ersem environment
 	mkdir -p $GOTM_PREFIX && cd $GOTM_PREFIX
 	cmake $GOTMDIR/src -DCMAKE_INSTALL_PREFIX=`pwd` -DFABM_BASE=$FABMDIR -DCMAKE_Fortran_COMPILER=$COMPILER
-	sudo make install
+	make install
 	echo ' '>> ~/.bashrc
 	echo '# '$DATETIME': add gotm in fabm-gotm environment to the system path'>> ~/.bashrc
   	echo 'export PATH='$GOTM_PREFIX':${PATH}'>> ~/.bashrc
