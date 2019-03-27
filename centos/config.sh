@@ -18,6 +18,8 @@ sudo yum -y install python36u-pip
 
 sudo yum -y install python36u-devel
 
+sudo yum -y install python2-pip
+
 sudo yum -y install mlocate
 sudo updatedb
 
