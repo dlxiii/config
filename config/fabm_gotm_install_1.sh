@@ -63,17 +63,19 @@ rm -rf m4-1.4.18
 
 # install netcdf-c
 cd $FILEDIR
-tar -xzvf netcdf-c-4.6.1.tar.gz
+wget https://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-4.6.1.tar.gz
+tar -xzvf netcdf-4.6.1.tar.gz
 cd netcdf-c-4.6.1
 LDFLAGS=-L$APPDIR/lib CPPFLAGS=-I$APPDIR/include ./configure --prefix=$APPDIR CC=$CC CXX=$CXX CFLAGS=-O3 CXXFLAGS=-O3 FC=$COMPILER F77=$COMPILER F90=$COMPILER --enable-fortran --disable-netcdf-4 --disable-dap
 make
 make check
 make install
 cd ..
-rm -rf netcdf-c-4.6.1
+rm -rf netcdf-4.6.1
 
 # install netcdf-fortran
 cd $FILEDIR
+wget https://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-fortran-4.4.4.tar.gz
 tar -xzvf netcdf-fortran-4.4.4.tar.gz
 cd netcdf-fortran-4.4.4
 LDFLAGS=-L$APPDIR/lib CPPFLAGS=-I$APPDIR/include ./configure --prefix=$APPDIR CC=$CC CXX=$CXX CFLAGS=-O3 CXXFLAGS=-O3 FC=$COMPILER F77=$COMPILER F90=$COMPILER
