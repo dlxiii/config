@@ -21,6 +21,8 @@ sudo yum -y install python36u-devel
 sudo yum -y install mlocate
 sudo updatedb
 
+sudo yum -y install wget
+
 echo ' '>> ~/.bashrc
 echo '# '$DATETIME': create alias for python2 and python3'>> ~/.bashrc
 echo 'alias py3="/usr/bin/python3.6"'>> ~/.bashrc
