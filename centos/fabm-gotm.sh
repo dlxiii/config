@@ -2,11 +2,12 @@
 
 export DATETIME=$(date "+%Y-%m-%d %H:%M:%S")
 export FILDIR=$HOME/Downloads
-export FABMDIR=$HOME/Documents/fabm/code
-export GOTMDIR=$HOME/Documents/gotm/code
-export GOTMEXP=$HOME/Documents/gotm/cases
-export FABM_PREFIX=$HOME/Documents/fabm/build/gotm
-export GOTM_PREFIX=$HOME/Documents/gotm/build
+export DIRBASE=$HOME/tools
+export FABMDIR=$DIRBASE/fabm/code
+export GOTMDIR=$DIRBASE/gotm/code
+export GOTMEXP=$DIRBASE/gotm/cases
+export FABM_PREFIX=$DIRBASE/fabm/build/gotm
+export GOTM_PREFIX=$DIRBASE/gotm/build
 export COMPILER=gfortran
 
 # download fabm code
@@ -17,7 +18,7 @@ else
 	# setup and install for gotm environment
 	mkdir -p $FABM_PREFIX && cd $FABM_PREFIX
 	cmake $FABMDIR/src -DCMAKE_INSTALL_PREFIX=`pwd` -DFABM_EMBED_VERSION=ON -DCMAKE_Fortran_COMPILER=$COMPILER
-	make install
+	sudo make install
 fi
 
 # download gotm code
@@ -28,10 +29,10 @@ else
 	# setup and install for fabm-gotm-ersem environment
 	mkdir -p $GOTM_PREFIX && cd $GOTM_PREFIX
 	cmake $GOTMDIR/src -DCMAKE_INSTALL_PREFIX=`pwd` -DFABM_BASE=$FABMDIR -DCMAKE_Fortran_COMPILER=$COMPILER
-	make install
+	sudo make install
 	echo ' '>> ~/.bashrc
 	echo '# '$DATETIME': add gotm in fabm-gotm environment to the system path'>> ~/.bashrc
-  echo 'export PATH=$GOTM_PREFIX:${PATH}'>> ~/.bashrc
+  	echo 'export PATH='$GOTM_PREFIX':${PATH}'>> ~/.bashrc
 	echo '###################################################'>> ~/.bashrc
   source ~/.bashrc
 	#sudo ln -s $GOTM_PREFIX/gotm /usr/local/gotm
