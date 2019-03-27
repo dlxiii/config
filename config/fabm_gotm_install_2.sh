@@ -43,6 +43,7 @@ if [ -d $GOTMEXP ];then
 else
 	git clone git://github.com/gotm-model/cases.git $GOTMEXP
 	cd $FILDIR
+	wget https://github.com/gotm-model/code/releases/download/v5.0.1/gotmgui-0.1.1-py2-none-any.whl
 	pip2 install xmlplot --upgrade --user
 	pip2 install xmlstore --upgrade --user
 	pip2 install editscenario --upgrade --user
