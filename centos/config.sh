@@ -23,6 +23,8 @@ sudo updatedb
 
 sudo yum -y install wget
 
+sudo yum -y install cmake
+
 echo ' '>> ~/.bashrc
 echo '# '$DATETIME': create alias for python2 and python3'>> ~/.bashrc
 echo 'alias py3="/usr/bin/python3.6"'>> ~/.bashrc
