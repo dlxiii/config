@@ -84,7 +84,7 @@ cd $FILEDIR
 wget https://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-fortran-4.4.4.tar.gz
 tar -xzvf netcdf-fortran-4.4.4.tar.gz
 cd netcdf-fortran-4.4.4
-LDFLAGS=-L$APPDIR/netcdf-c/lib CPPFLAGS=-I$APPDIR/netcdf-c/include ./configure --prefix=$APPDIR-fortran CC=$CC CXX=$CXX CFLAGS=-O3 CXXFLAGS=-O3 FC=$COMPILER F77=$COMPILER F90=$COMPILER
+LDFLAGS=-L$APPDIR/netcdf-c/lib CPPFLAGS=-I$APPDIR/netcdf-c/include ./configure --prefix=$APPDIR/netcdf-fortran CC=$CC CXX=$CXX CFLAGS=-O3 CXXFLAGS=-O3 FC=$COMPILER F77=$COMPILER F90=$COMPILER
 make
 make check
 sudo make install
