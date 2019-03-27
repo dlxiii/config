@@ -19,6 +19,7 @@ sudo yum -y install python36u-pip
 sudo yum -y install python36u-devel
 
 sudo yum -y install mlocate
+sudo updatedb
 
 echo ' '>> ~/.bashrc
 echo '# '$DATETIME': create alias for python2 and python3'>> ~/.bashrc
