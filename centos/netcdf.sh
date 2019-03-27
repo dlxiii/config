@@ -72,6 +72,13 @@ cd ..
 rm -rf netcdf-4.6.1
 rm netcdf-4.6.1.tar.gz
 
+echo ' '>> ~/.bashrc
+echo '# '$DATETIME': install netcdf-c'>> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/opt/netcdf-c/lib:${LD_LIBRARY_PATH}'>> ~/.bashrc
+echo 'export PATH=/opt/netcdf-c/bin:${PATH}'>> ~/.bashrc
+echo '###################################################'>> ~/.bashrc
+source ~/.bashrc
+
 # install netcdf-fortran
 cd $FILEDIR
 wget https://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-fortran-4.4.4.tar.gz
@@ -84,3 +91,10 @@ sudo make install
 cd ..
 rm -rf netcdf-fortran-4.4.4
 rm netcdf-fortran-4.4.4.tar.gz
+
+echo ' '>> ~/.bashrc
+echo '# '$DATETIME': install netcdf-fortran'>> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/opt/netcdf-fortran/lib:${LD_LIBRARY_PATH}'>> ~/.bashrc
+echo 'export PATH=/opt/netcdf-fortran/bin:${PATH}'>> ~/.bashrc
+echo '###################################################'>> ~/.bashrc
+source ~/.bashrc
