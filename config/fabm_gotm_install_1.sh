@@ -8,8 +8,8 @@ if [ $COMPILER = 'gfortran']; then
 	export CC=gcc
 	export CXX=c++
 else
-	export CC=icc -E
-	export CXX=$CC
+	export CC=icc
+	export CXX=icc
 fi
 
 
