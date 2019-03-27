@@ -4,9 +4,7 @@ Please read this document before you clone the git.
 
 ## Environment
 
-Consider you are prefer doing your work on ubuntu, I prepared a one-key setup bash file named "ubuntu_config.sh"
-
-Those are necessary libs for the next building work.
+If you are prefer doing your work on ubuntu, I prepared a one-key setup bash file named "ubuntu_config.sh"
 
 ## Prepare
 
