@@ -34,4 +34,6 @@ echo 'alias py2="/usr/bin/python2.7"'>> ~/.bashrc
 echo '###################################################'>> ~/.bashrc
 source ~/.bashrc
 
+sudo yum -y install xorg-x11-xauth xorg-x11-fonts-* xorg-x11-font-utils xorg-x11-fonts-Type1
+
 sudo yum -y install codeblocks
