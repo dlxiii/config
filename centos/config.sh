@@ -33,3 +33,5 @@ echo 'alias py3="/usr/bin/python3.6"'>> ~/.bashrc
 echo 'alias py2="/usr/bin/python2.7"'>> ~/.bashrc
 echo '###################################################'>> ~/.bashrc
 source ~/.bashrc
+
+sudo yum -y install codeblocks
