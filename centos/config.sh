@@ -37,3 +37,6 @@ source ~/.bashrc
 sudo yum -y install xorg-x11-xauth xorg-x11-fonts-* xorg-x11-font-utils xorg-x11-fonts-Type1
 
 sudo yum -y install codeblocks
+
+sudo yum -y install gnuplot
+
