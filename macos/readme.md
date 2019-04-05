@@ -5,3 +5,5 @@ System Preference > Accessibility > Mouse & Trackpad > Trackpad Options... > Che
 ## Add input sources
 
 System Preference > Keyboard > Input Sources
+
+System Preference > Keyboard > Shortcuts > Input Sources > Select the previous input source > command + space
