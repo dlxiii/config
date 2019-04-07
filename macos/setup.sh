@@ -1,6 +1,11 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf400
-{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-}
+# modify defalt screen shot path
+defaults write com.apple.screencapture location ~/Pictures/
+
+# install home brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# write to path
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+
+# install gcc
+brew install gcc
