@@ -11,7 +11,7 @@ export CXX=c++
 
 # install and setup zlib
 cd $FILEDIR
-wget https://zlib.net/zlib-1.2.11.tar.gz
+wget https://zlib.net/zlib-1.2.11ll.tar.gz
 tar -xzvf zlib-1.2.11.tar.gz
 cd zlib-1.2.11
 ./configure --prefix=$APPDIR/zlib-1.2.11
