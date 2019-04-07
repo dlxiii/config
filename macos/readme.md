@@ -15,3 +15,7 @@ System Preference > Keyboard > Shortcuts > Input Sources > Select the previous i
 Add /usr/local/bin to $PATH
 
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+
+## iTerm
+
+https://zhuanlan.zhihu.com/p/37195261
