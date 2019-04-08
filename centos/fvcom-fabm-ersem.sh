@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export DATETIME=$(date "+%Y-%m-%d %H:%M:%S")
+export HEREDIR=$(pwd)
 export DIRBASE=$HOME/tools
 export FABMDIR=$DIRBASE/fabm/code
 export ERSEMDIR=$DIRBASE/ersem/code
@@ -34,7 +35,11 @@ fi
 if [ -f $FVCOM_PREFIX/ ];then
 	echo "Step4: Building work had finished"
 else
-  mkdir $FVCOM_PREFIX && cd $FVCOM_PREFIX
+  mkdir $FVCOM_PREFIX
+  cp $HEREDIR/make.inc $FVCOMDIR/FVCOM_source/make.inc
+  cd $FVCOMDIR/FVCOM_source/libs
+  make
+  cd $FVCOM_PREFIX
   cmake $FVCOMDIR    \
     -DCMAKE_INSTALL_PREFIX=$FVCOM_PREFIX    \
     -DFVCOM_USE_FABM=ON    \
