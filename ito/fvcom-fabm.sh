@@ -3,10 +3,10 @@
 export COMPILER=ifort
 export HOST=fvcom
 
+export RUNDIR=$(pwd)
 export DATETIME=$(date "+%Y-%m-%d %H:%M:%S")
-export DIRBASE=$HOME/tools
-export FABMDIR=$DIRBASE/fvcom43-fabm-npzd/FABM_source/code
-export FABM_PREFIX=$DIRBASE/fvcom43-fabm-npzd/FABM_source/build/$HOST
+export FABMDIR=$RUNDIR/code
+export FABM_PREFIX=$RUNDIR/build/$HOST
 
 # download fabm code
 if [ -d $FABM_PREFIX ];then
